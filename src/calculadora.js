@@ -6,5 +6,9 @@ class Calculadora {
   restar(a, b) {
     return a - b;
   }
+
+  multiplicar(a, b) {
+    return a * b;
+  }
 }
 module.exports = Calculadora;

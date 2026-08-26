@@ -32,3 +32,11 @@ When('multiplico {int} y {int}', function (n1, n2) {
 Then('el resultado de la multiplicación debe ser {int}', function (esperado) {
   assert.strictEqual(resultado, esperado);
 });
+
+When('divido {int} entre {int}', function (n1, n2) {
+  resultado = calc.dividir(n1, n2);
+});
+
+Then('el resultado de la división debe ser {int}', function (esperado) {
+  assert.strictEqual(resultado, esperado);
+});

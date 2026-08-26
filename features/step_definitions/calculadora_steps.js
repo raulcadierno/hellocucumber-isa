@@ -16,3 +16,11 @@ When('sumo {int} y {int}', function (n1, n2) {
 Then('el resultado de la suma debe ser {int}', function (esperado) {
   assert.strictEqual(resultado, esperado);
 });
+
+When('resto {int} y {int}', function (n1, n2) {
+  resultado = calc.restar(n1, n2);
+});
+
+Then('el resultado de la resta debe ser {int}', function (esperado) {
+  assert.strictEqual(resultado, esperado);
+});
